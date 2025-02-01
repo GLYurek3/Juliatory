@@ -1,0 +1,8 @@
+name = "Juliatory"
+uuid = "3d4876d2-c062-40cf-a364-784af047abf3"
+authors = ["Gerald Lee Yurek III"]
+version = "0.1.0"
+
+[deps]
+Gtk4 = "9db2cae5-386f-4011-9d63-a5602296539b"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
