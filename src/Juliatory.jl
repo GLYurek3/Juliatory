@@ -6,11 +6,13 @@ that looks something like matlab but only better
 """
 
 module Juliatory
-include("./interface/InitWindow.jl")
+include("./Interface/InitWindow.jl")
+
 """
 This is the entrypoint for the program
 """
 function run()
-InitWindow.create()
+InitWindow.Create()
 end
+
 end # module Juliatory
