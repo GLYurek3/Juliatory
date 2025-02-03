@@ -8,15 +8,15 @@ using Gtk4
 
 include("../KeyEvents/KeyHandler.jl")
 
-win = GtkWindow("Juliatory Proof Of Concept", 400, 200)
+
 function create()
+    win = GtkWindow("Juliatory Proof Of Concept", 400, 200)
     eventControllerKey = GtkEventControllerKey(win)
     KeyHandler.addKeys(win, eventControllerKey)
     layoutBox = GtkBox(:v)
-    push!(win, LayoutBox)
+    push!(win, layoutBox)
     textView = GtkTextView()
-    push!(LayoutBox, TextView)
-
+    push!(layoutBox, textView)
 
     show(win)
 end # function Create
